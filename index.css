@@ -1,0 +1,211 @@
+/* stylelint-disable */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Saudi USDT P2P Trading Platform - Design System */
+
+@layer base {
+  :root {
+    --radius: 0.5rem;
+
+    /* Deep Navy Blue - primary brand */
+    --background: 210 25% 97%;
+    --foreground: 215 35% 12%;
+    --card: 0 0% 100%;
+    --card-foreground: 215 35% 12%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 215 35% 12%;
+
+    /* Primary: Deep Sea Blue (#0A2540) */
+    --primary: 212 78% 14%;
+    --primary-foreground: 210 40% 98%;
+
+    /* Secondary: soft blue-gray */
+    --secondary: 213 27% 90%;
+    --secondary-foreground: 212 78% 14%;
+
+    --muted: 213 20% 93%;
+    --muted-foreground: 215 16% 42%;
+
+    /* Accent: Desert Gold toned down */
+    --accent: 42 25% 92%;
+    --accent-foreground: 215 35% 12%;
+
+    --destructive: 0 84% 55%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 213 25% 88%;
+    --input: 213 25% 88%;
+    --ring: 212 78% 30%;
+
+    /* Status colors */
+    --success: 158 64% 36%;
+    --success-foreground: 0 0% 100%;
+    --warning: 38 92% 50%;
+    --warning-foreground: 0 0% 100%;
+    --info: 207 90% 54%;
+    --info-foreground: 0 0% 100%;
+
+    /* Desert Gold accent */
+    --gold: 42 65% 58%;
+    --gold-foreground: 215 35% 12%;
+
+    /* Chart colors */
+    --chart-1: 212 78% 30%;
+    --chart-2: 158 64% 36%;
+    --chart-3: 42 65% 58%;
+    --chart-4: 0 84% 55%;
+    --chart-5: 280 65% 55%;
+
+    /* Sidebar */
+    --sidebar-background: 212 78% 11%;
+    --sidebar-foreground: 210 40% 90%;
+    --sidebar-primary: 42 65% 58%;
+    --sidebar-primary-foreground: 215 35% 12%;
+    --sidebar-accent: 212 50% 18%;
+    --sidebar-accent-foreground: 210 40% 95%;
+    --sidebar-border: 212 50% 18%;
+    --sidebar-ring: 42 65% 58%;
+
+    /* Education tokens (kept for compatibility) */
+    --education-blue: 212 78% 30%;
+    --education-green: 158 64% 36%;
+
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(212, 78%, 14%) 0%, hsl(212, 78%, 22%) 100%);
+    --gradient-card: linear-gradient(135deg, hsl(0, 0%, 100%) 0%, hsl(213, 20%, 97%) 100%);
+    --gradient-background: linear-gradient(180deg, hsl(210, 25%, 97%) 0%, hsl(213, 20%, 93%) 100%);
+    --gradient-gold: linear-gradient(135deg, hsl(42, 65%, 58%) 0%, hsl(38, 75%, 48%) 100%);
+
+    /* Shadows */
+    --shadow-card: 0 1px 3px 0 rgb(0 0 0 / 0.08), 0 1px 2px -1px rgb(0 0 0 / 0.06);
+    --shadow-hover: 0 8px 16px -4px rgb(10 37 64 / 0.15), 0 4px 8px -4px rgb(10 37 64 / 0.1);
+  }
+
+  .dark {
+    --background: 215 35% 8%;
+    --foreground: 210 40% 95%;
+    --card: 215 35% 11%;
+    --card-foreground: 210 40% 95%;
+    --popover: 215 35% 11%;
+    --popover-foreground: 210 40% 95%;
+
+    --primary: 42 65% 55%;
+    --primary-foreground: 215 35% 8%;
+
+    --secondary: 215 30% 18%;
+    --secondary-foreground: 210 40% 90%;
+
+    --muted: 215 30% 16%;
+    --muted-foreground: 213 20% 58%;
+
+    --accent: 215 25% 16%;
+    --accent-foreground: 210 40% 90%;
+
+    --destructive: 0 62% 45%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 215 30% 18%;
+    --input: 215 30% 18%;
+    --ring: 42 65% 55%;
+
+    --success: 158 60% 40%;
+    --success-foreground: 0 0% 100%;
+    --warning: 38 85% 55%;
+    --warning-foreground: 215 35% 8%;
+    --info: 207 80% 58%;
+    --info-foreground: 0 0% 100%;
+
+    --gold: 42 65% 58%;
+    --gold-foreground: 215 35% 8%;
+
+    --chart-1: 42 65% 55%;
+    --chart-2: 158 60% 45%;
+    --chart-3: 207 80% 58%;
+    --chart-4: 0 62% 55%;
+    --chart-5: 280 65% 60%;
+
+    --sidebar-background: 215 40% 6%;
+    --sidebar-foreground: 210 40% 88%;
+    --sidebar-primary: 42 65% 58%;
+    --sidebar-primary-foreground: 215 35% 8%;
+    --sidebar-accent: 215 30% 13%;
+    --sidebar-accent-foreground: 210 40% 88%;
+    --sidebar-border: 215 30% 13%;
+    --sidebar-ring: 42 65% 58%;
+
+    --education-blue: 42 65% 55%;
+    --education-green: 158 60% 45%;
+
+    --gradient-primary: linear-gradient(135deg, hsl(215, 40%, 6%) 0%, hsl(215, 35%, 11%) 100%);
+    --gradient-card: linear-gradient(135deg, hsl(215, 35%, 11%) 0%, hsl(215, 30%, 13%) 100%);
+    --gradient-background: linear-gradient(180deg, hsl(215, 35%, 8%) 0%, hsl(215, 40%, 6%) 100%);
+    --gradient-gold: linear-gradient(135deg, hsl(42, 65%, 58%) 0%, hsl(38, 75%, 48%) 100%);
+
+    --shadow-card: 0 1px 3px 0 rgb(0 0 0 / 0.3), 0 1px 2px -1px rgb(0 0 0 / 0.2);
+    --shadow-hover: 0 8px 16px -4px rgb(0 0 0 / 0.4), 0 4px 8px -4px rgb(0 0 0 / 0.3);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+    scrollbar-width: thin;
+    scrollbar-color: hsl(var(--border)) transparent;
+  }
+
+  *::-webkit-scrollbar {
+    width: 6px;
+    background: transparent;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background: hsl(var(--border));
+    border-radius: 3px;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
+
+@layer utilities {
+  .gradient-text {
+    background: var(--gradient-gold);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+  }
+
+  .bg-gradient-gold {
+    background: var(--gradient-gold);
+  }
+
+  .status-pending {
+    @apply bg-warning/15 text-warning border border-warning/30;
+  }
+  .status-approved {
+    @apply bg-success/15 text-success border border-success/30;
+  }
+  .status-rejected {
+    @apply bg-destructive/15 text-destructive border border-destructive/30;
+  }
+  .status-reupload {
+    @apply bg-info/15 text-info border border-info/30;
+  }
+  .status-cancelled {
+    @apply bg-muted text-muted-foreground border border-border;
+  }
+  .status-open {
+    @apply bg-info/15 text-info border border-info/30;
+  }
+  .status-resolved {
+    @apply bg-success/15 text-success border border-success/30;
+  }
+  .status-closed {
+    @apply bg-muted text-muted-foreground border border-border;
+  }
+}
